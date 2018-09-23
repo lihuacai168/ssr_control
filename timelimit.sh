@@ -44,7 +44,7 @@ checkonly(){
 					cd /usr/local/shadowsocksr/
 					python mujson_mgr.py -e -p ${port} -f"1-65536" 1>/dev/null 2>&1
 					#python mujson_mgr.py -d -p ${port} 1>/dev/null 2>&1
-					#sed -i '/'"${line}"'/d' ${userlimit}
+					sed -i '/'"${line}"'/d' ${userlimit}
 				fi
 			fi
 		done
